@@ -3,18 +3,7 @@ public class Car {
     private String color;
     private String brand;
 
-    public String getEngine() {
-        return engine;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
+    // Métodos - Procedimentos
     public void setEngine(String e) {
         this.engine = e;
     }
@@ -27,12 +16,25 @@ public class Car {
         this.brand = b;
     }
 
+    // Métodos - Funções
     public String toString() {
         return "Car {" +
                 "engine='" + engine + '\'' +
                 ", color='" + color + '\'' +
                 ", brand='" + brand + '\'' +
                 '}';
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getBrand() {
+        return brand;
     }
 
     public static void main(String[] args) {
@@ -53,11 +55,11 @@ public class Car {
         System.out.println(c1.getBrand());
 
         System.out.println("-------------------------");
-        
+
         System.out.println(c2.getEngine());
         System.out.println(c2.getColor());
         System.out.println(c2.getBrand());
-        
+
         System.out.println("-------------------------");
 
     }
